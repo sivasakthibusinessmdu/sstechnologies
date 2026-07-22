@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SS Technologies</title>
+</head>
+<body>
+  <h1>Welcome to SS Technologies</h1>
+  <p>Browse our products and shop online:</p>
+  
+  <!-- Button linking to Netlify dynamic site -->
+  <button onclick="window.location.href='https://your-netlify-site.netlify.app'">
+    Browse Nighties
+  </button>
+</body>
+</html>
