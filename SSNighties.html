@@ -39,4 +39,89 @@
 
     @keyframes fadeIn {
       from { opacity: 0; transform: scale(0.9); }
-      to { opacity: 1; transform: scale
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px;
+    }
+
+    .product {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 220px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .amazon-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #FF9900, #FF6600);
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .amazon-btn:hover {
+      background: linear-gradient(135deg, #FF6600, #CC5200);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+    }
+
+    .amazon-btn:active {
+      transform: translateY(1px);
+      box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-container">
+    <h1>Welcome to SS Nighties</h1>
+    <h2>A Unit of SivaSakthi Business</h2>
+  </div>
+
+  <div style="text-align:center;">
+    <h1>Shop SS Nighties on Amazon</h1>
+    <p>Click the button below each product to buy</p>
+  </div>
+
+  <div class="gallery">
+    <div class="product">
+      <img src="Design_1.jpg" alt="SS Nightie Floral Design">
+      <a href="https://www.amazon.in/dp/B0HBQBRGT7" target="_blank" class="amazon-btn">🛒 Buy on Amazon</a>
+    </div>
+    <div class="product">
+      <img src="nightie2.jpg" alt="SS Nightie Cotton Comfort">
+      <a href="https://www.amazon.in/dp/example2" target="_blank" class="amazon-btn">🛒 Buy on Amazon</a>
+    </div>
+    <div class="product">
+      <img src="nightie3.jpg" alt="SS Nightie Premium Silk">
+      <a href="https://www.amazon.in/dp/example3" target="_blank" class="amazon-btn">🛒 Buy on Amazon</a>
+    </div>
+    <div class="product">
+      <img src="nightie4.jpg" alt="SS Nightie Trendy Prints">
+      <a href="https://www.amazon.in/dp/example4" target="_blank" class="amazon-btn">🛒 Buy on Amazon</a>
+    </div>
+  </div>
+
+</body>
+</html>
