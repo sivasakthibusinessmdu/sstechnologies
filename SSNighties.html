@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <title>SS Nighties</title>
   <style>
+     /* Barcode container in top-right */
+    .barcode-container {
+      position: fixed;   /* stays in top-right even when scrolling */
+      top: 20px;
+      right: 20px;
+      text-align: center;
+    }
+
+    .barcode-container img {
+      height: 100px;     /* adjust barcode size */
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .barcode-container p {
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #8b0000;
+    }
     body {
       margin: 0;
       padding: 0;
@@ -95,7 +116,10 @@
   </style>
 </head>
 <body>
-
+<div class="barcode-container">
+    <img src="DonateBarcode.jpeg" alt="Barcode">
+    <p>Invest, Earn, Donate</p>
+  </div>
   <div class="title-container">
     <h1>Welcome to <img src="SSNighties_Brand_Image.jpeg" alt="SS Nighties"></h1>
     <h2>A Unit of SivaSakthi Business</h2>
