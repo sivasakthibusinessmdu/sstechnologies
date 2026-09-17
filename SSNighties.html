@@ -4,28 +4,26 @@
   <meta charset="UTF-8">
   <title>SS Nighties</title>
   <style>
-     /* Barcode container in top-right */
-    .barcode-container {
-      position: fixed;   /* stays in top-right even when scrolling */
-      top: 20px;
-      right: 20px;
-      text-align: center;
-    }
+     
+.title-container {
+  position: relative; /* allows absolute positioning inside */
+  text-align: center;
+}
 
-    .barcode-container img {
-      height: 100px;     /* adjust barcode size */
-      width: auto;
-      display: block;
-      margin: 0 auto;
-    }
+.barcode-behind {
+  position: absolute;
+  top: 10px;          /* adjust vertical placement */
+  left: 50%;          /* center horizontally */
+  transform: translateX(-50%);
+  z-index: -1;        /* pushes barcode behind the title */
+  opacity: 0.25;      /* faded so text stays readable */
+}
 
-    .barcode-container p {
-      margin-top: 5px;
-      font-size: 14px;
-      font-weight: bold;
-      color: #8b0000;
-    }
-    body {
+.barcode-behind img {
+  height: 120px;      /* adjust size */
+  width: auto;
+}
+        body {
       margin: 0;
       padding: 0;
       font-family: 'Georgia', serif;
@@ -116,13 +114,12 @@
   </style>
 </head>
 <body>
-<div class="barcode-container">
-    <img src="DonateBarcode.jpg" alt="Barcode">
-    <p>Invest, Earn, Donate</p>
-     <p>Donate For The Poor</p>
-  </div>
+
   <div class="title-container">
     <h1>Welcome to <img src="SSNighties_Brand_Image.jpeg" alt="SS Nighties"></h1>
+    <span class="barcode-behind">
+      <img src="DonateBarcode.jpg" alt="Barcode">
+    </span>
     <h2>A Unit of SivaSakthi Business</h2>
   </div>
 
